@@ -147,10 +147,15 @@
         <div class="lightertext">Community Rules 
             <div class="lightertext" id="lightertext">・No Nsfw <br>・No Spam <br> ・Respect Community Users <br> ・Follow Common Sense</div>
         </div>
-    <div class="contact">[ Contact ]<br><br> Contact for TrustYourSense on Discord. <br> Discord: discord.gg/7mWznFQn <br> <span class="red">[WARNING] Watch out for mistakes.</span> </div>
-    <div class="changelog">[ ChangeLog ] <br><br> [+] Add　[-] Removed　[/] Improve　[?] New
+        <div class="contact">
+            [ Contact ]<br><br>
+            Contact for TrustYourSense on Discord. <br>
+            Discord: <a id="discordLink" style="text-decoration: underline; cursor: pointer; color:  rgb(240, 240, 240);" href="discord.gg/7mWznFQn">discord.gg/7mWznFQn</a> <br>
+            <span class="red">[WARNING] Watch out for mistakes.</span>
+        </div>
+        <div class="changelog">[ ChangeLog ] <br><br> [+] Add　[-] Removed　[/] Improve　[?] New
         <br> [/] Improve Sensation Logo.
-        <br> [+] Add CopyRight Text.
+        <br> [+] Add CopyRights Text.
         <br> [+] Add Information Tab.
         <br> [+] Add Contact Tab.
         <br> [+] Add ChangeLog Tab.
@@ -173,4 +178,10 @@
             document.body.removeChild(link);
         }
         </script>
+    <script>
+        document.getElementById("discordLink").addEventListener("click", function(event) {
+            event.preventDefault();
+            window.open("https://discord.gg/7mWznFQn");
+        });
+    </script>
 </html>
