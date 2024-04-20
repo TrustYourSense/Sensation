@@ -1,0 +1,6 @@
+title: My GitHub Pages Site
+description: A brief description of my site.
+theme: jekyll-theme-architect
+
+# サイトのビルド設定
+markdown: kramdown
