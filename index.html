@@ -3,20 +3,19 @@
 
 <head>
     <title>Sensation</title>
-    <link rel="icon" type="image/png" href="icon.png">
     <style>
-        body{
+        body {
             background: rgb(25, 25, 25);
             color: white;
-            position: relative; 
+            position: relative;
         }
-        .glow  {
-            mix-blend-mode: screen; 
+        .glow {
+            mix-blend-mode: screen;
             filter: brightness(200%);
             pointer-events: none;
         }
         .line {
-            border-top: 1px dashed rgb(200, 200, 200); 
+            border-top: 1px dashed rgb(200, 200, 200);
             padding: 10px;
             text-align: right;
         }
@@ -26,49 +25,25 @@
             color: rgb(240, 240, 240);
             font-family: Tahoma, sans-serif;
             position: absolute;
-            top: 85px; 
-            right: 10px; 
-            user-select: none; 
+            top: 85px;
+            right: 10px;
+            user-select: none;
         }
-        .info {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-            line-height: 16px;
-        }
-        .contact {
+        .info,
+        .contact,
+        .changelog,
+        .donate,
+        .product,
+        .paneltitle,
+        .boldtext,
+        .lightertext,
+        .memo {
             font-size: 11px;
             padding: 10px;
             color: rgb(240, 240, 240);
             font-family: Tahoma, sans-serif;
             user-select: none;
-            line-height: 16px; 
-        }
-        .changelog {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
             line-height: 16px;
-        }
-        .donate {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-            line-height: 15px;
-        }
-        .product {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-            line-height: 15px;
         }
         .copyright {
             font-size: 11px;
@@ -84,72 +59,8 @@
             transform: translateX(-50%);
             width: 100%;
         }
-        .paneltitle {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-        }
-        .boldtext {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma-, sans-serif;
-            user-select: none; 
-            font-weight: bold; 
-        }
-        .lightertext {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-        }
-        .memo {
-            font-size: 11px;
-            padding: 10px;
-            color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
-            user-select: none; 
-        }
         .red {
             color: red;
-        }
-        .chatpanel {
-            width: 1600px;
-            height: 685px;
-            border: 1px solid rgb(150, 150, 150);
-            position: absolute;
-            top: 167px;
-            left: 270px;
-            user-select: none; 
-            pointer-events: none;
-        }
-        .underline {
-            border-top: 1px solid rgb(150, 150, 150); 
-            position: absolute;
-            top: 32px;
-            width: 1570px;
-        }
-        .canvas {
-            width: 200px;
-            height: 200px;
-            background-color: rgb(23, 23, 23); 
-            border: 1.5px solid rgb(100, 100, 100); 
-            border-radius: 0px;
-            position: absolute;
-            left: 230px;
-            top: 160px;
-        }
-        .box {
-            width: 150px;
-            height: 155px; 
-            background-color: rgb(25, 25, 25);
-            position: absolute; 
-            border: 1.5px solid rgb(100, 100, 100);
-            top: 165px;
-            left: 220px;
         }
     </style>
 </head>
@@ -157,44 +68,46 @@
 <body>
     <img src="logo.png" class="glow" alt="Sensation">
     <div class="hello">4/17/2024 made by Sensei<br>Hello There. Guest!</div>
-    <div class="copyright"> © 2024 Sensation. All Rights Reserved.</div>
+    <div class="copyright">© 2024 Sensation. All Rights Reserved.</div>
     <div class="line"></div>
     <div class="info">[ Information ]<br><br> Welcome to Sensation. <br> This is a Private Community. <br> Protected & Managed by Administrator.</div>
-        <div class="lightertext">Community Rules 
-            <div class="lightertext" id="lightertext">・No Nsfw <br>・No Spam <br> ・Respect Community Users <br> ・Follow Common Sense</div>
-        </div>
-        <div class="contact">[ Contact ]<br><br> Contact for TrustYourSense on Discord. <br> Discord: <a id="discordLink" style="text-decoration: underline; cursor: pointer; color:  rgb(240, 240, 240);" href="discord.gg/7mWznFQn">discord.gg/7mWznFQn</a> <br>
-            <span class="red">[WARNING] Watch out for mistakes.</span>
-        </div>
-        <div class="changelog">[ ChangeLog ] <br><br> [+] Add　[-] Removed　[/] Improve　[?] New
-        <br> [/] Improve Sensation Logo.
+    <div class="lightertext">Community Rules
+        <div class="lightertext" id="lightertext">・No Nsfw <br>・No Spam <br> ・Respect Community Users <br> ・Follow Common Sense</div>
+    </div>
+    <div class="contact">[ Contact ]<br><br> Contact for TrustYourSense on Discord. <br> Discord: <a id="discordLink" style="text-decoration: underline; cursor: pointer; color:  rgb(240, 240, 240);" href="discord.gg/7mWznFQn">discord.gg/7mWznFQn</a> <br>
+        <span class="red">[WARNING] Watch out for mistakes.</span>
+    </div>
+    <div class="changelog">[ ChangeLog ] <br><br> [+] Add　[-] Removed　[/] Improve　[?] New
+        <br> [/]&nbsp; Improve Sensation Logo.
         <br> [+] Add CopyRights Text.
         <br> [+] Add Information Tab.
         <br> [+] Add Contact Tab.
         <br> [+] Add ChangeLog Tab.
         <br> [+] Add Donate Tab.
-        <br> [!] New Pay Method.</div>
+        <br> [!]&nbsp; New Pay Method.</div>
     <div class="donate">[ Donate ] <br><br> 
-         Paypay: yuzu5425 <br>
-         Alipay: TrustYourSense <br></div>
-     <div class="product">[ Product ] <br><br> 
+        Paypay: yuzu5425 <br>
+        Alipay: TrustYourSense <br></div>
+    <div class="product">[ Product ] <br><br> 
         <span style="text-decoration: underline; cursor: pointer;" onclick="download()">Launcher Click to Download</span> <br>
-    </body>
-    <script>
-        function download() {
-            var fileUrl = "https://cdn.discordapp.com/attachments/1155873757823520819/1231191058583519273/Launcher.7z?ex=66360f06&is=66239a06&hm=a9d19c385415766a0303e07b79959e2d19c07ce2afa2a74f27a64208944755e8&";
-            var link = document.createElement("a");
-            link.href = fileUrl;
-            link.style.display = "none";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-        </script>
-    <script>
-        document.getElementById("discordLink").addEventListener("click", function(event) {
-            event.preventDefault();
-            window.open("https://discord.gg/7mWznFQn");
-        });
-    </script>
+    </div>
+</body>
+<script>
+    function download() {
+        var fileUrl = "https://cdn.discordapp.com/attachments/1155873757823520819/1231191058583519273/Launcher.7z?ex=66360f06&is=66239a06&hm=a9d19c385415766a0303e07b79959e2d19c07ce2afa2a74f27a64208944755e8&";
+        var link = document.createElement("a");
+        link.href = fileUrl;
+        link.style.display = "none";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+<script>
+    document.getElementById("discordLink").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.open("https://discord.gg/7mWznFQn");
+    });
+</script>
+
 </html>
