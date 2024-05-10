@@ -4,6 +4,10 @@
 <head>
     <title>Sensation</title>
     <style>
+          @font-face {
+            font-family: Terminus;
+            src: url('font/Terminus.ttf') format('truetype');
+          }
         body {
             background: rgb(25, 25, 25);
             color: white;
@@ -20,10 +24,10 @@
             text-align: right;
         }
         .hello {
-            font-size: 10px;
+            font-size: 13px;
             padding: 10px;
             color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
+            font-family: Terminus, Tahoma;
             position: absolute;
             top: 85px;
             right: 10px;
@@ -33,22 +37,22 @@
         .contact,
         .changelog,
         .donate,
-        .product,
+        .ofther,
         .paneltitle,
         .boldtext,
         .lightertext {
-            font-size: 11px;
+            font-size: 13px;
             padding: 10px;
             color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
+            font-family: Terminus, Tahoma;
             user-select: none;
             line-height: 16px;
         }
         .copyright {
-            font-size: 11px;
+            font-size: 13px;
             padding: 10px;
             color: rgb(240, 240, 240);
-            font-family: Tahoma, sans-serif;
+            font-family: Terminus, Tahoma;
             user-select: none; 
             line-height: 15px;
             text-align: center;
@@ -76,7 +80,7 @@
     </div>
     <div class="lightertext">[ Contact ] <br><br> 
         Contact for TrustYourSense on Discord.<br>
-        Invite: <a id="discordLink" href="discord.gg/yecHsEYPyf" style="color: white;">discord.gg/yecHsEYPyf</a> <br>
+        Invite: <a id="discordLink" href="discord.gg/yecHsEYPyf" style="color: white;">discord.gg/yecHsEYPyf</a> <br> 
         <span class="red">[WARNING] Watch out for mistakes.</span>
     </div>
     <div class="changelog">[ ChangeLog ] <br><br> [+] Add　[-] Removed　[/] Improve　[!] New
@@ -89,7 +93,7 @@
     <div class="donate">[ Donate ] <br><br> 
         Paypay: yuzu5425 <br>
         Alipay: TrustYourSense <br></div>
-    <div class="product">[ Product ] <br><br> 
+    <div class="ofther">[ Ofther ] <br><br> 
         <span style="text-decoration: underline; cursor: pointer;" onclick="download()">Launcher Click to Download</span> <br>
     </div>
 </body>
